@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(src/ttpd\ bg.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-register-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container{
+    width: 450px;
+    min-height: 500px;
+    background: linear-gradient(to bottom right, #ffcccc, #b8ebeb);
+    border-radius: 6px;
+    box-shadow: 1px,1px,5px black;
+    padding: 40px 30px;
+}
+
+.container .login-register-text{
+    color: black;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login .input-group{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.container .login .input-group input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background: transparent;
+    padding: 15px 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login .input-group input:focus, .container .login .input-group input:valid{
+    border: #3e36ad;
+
+}
+
+.container .login .input-group .btn{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background-color: cadetblue;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    line-height: 20px;
+}
+
+.container .login .input-group .btn:hover{
+    background: #8e6384;
+}
+
+.login-register-text{
+    color:black;
+    font-weight: 600;
+}
+
+.login .login-register-text a{
+    text-decoration: none;
+    color:#0b3789;
+   font-weight: 800;
+}
+
+
+
+@media(max-width:430px){
+    .container{
+        width: 200px;
+    }
+}
+
+input :required{
+    border:none;
+}
+
+.large-input {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box; /* Prevent resizing */
+}
+
+.dropdown {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+}
