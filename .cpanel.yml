@@ -1,0 +1,5 @@
+---
+deployment:
+tasks:
+- export DEPLOYPATH=/home/naza3214/public_html/zulfa/
+- /bin/cp -r * $DEPLOYPATH
